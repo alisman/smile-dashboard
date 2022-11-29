@@ -54,7 +54,6 @@ export const RequestsListColumns: ColDef[] = [
     headerName: "# Samples",
     sortable: true,
     valueGetter: function({ data }) {
-      console.log(data);
       return data["hasSampleSamplesConnection"]?.totalCount;
     }
   },
